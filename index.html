@@ -1,0 +1,1480 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<meta name="theme-color" content="#0757a8">
+
+<meta name="description"
+      content="Ashraf Gaber - Technical Office - MASADER ALQUDRA ALFAILA">
+
+<title>Ashraf Gaber | MASADER ALQUDRA ALFAILA</title>
+
+
+<style>
+
+/* =========================================
+   ROOT
+========================================= */
+
+:root{
+
+    --blue:#0757a8;
+
+    --blue2:#0b78d0;
+
+    --dark:#073b73;
+
+    --light:#f4f8fc;
+
+    --text:#18324c;
+
+    --muted:#718397;
+
+    --border:#e2ebf4;
+
+    --white:#ffffff;
+
+    --shadow:
+        0 18px 50px
+        rgba(5,55,100,.12);
+}
+
+
+/* =========================================
+   GENERAL
+========================================= */
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+
+html{
+    scroll-behavior:smooth;
+}
+
+
+body{
+
+    font-family:
+        "Segoe UI",
+        Tahoma,
+        Arial,
+        sans-serif;
+
+    color:var(--text);
+
+    background:
+
+        radial-gradient(
+            circle at 10% 0%,
+            rgba(11,120,208,.10),
+            transparent 32%
+        ),
+
+        linear-gradient(
+            180deg,
+            #f9fcff 0%,
+            #edf5fb 100%
+        );
+
+    min-height:100vh;
+}
+
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.container{
+
+    width:100%;
+
+    max-width:1000px;
+
+    margin:auto;
+
+    padding:18px;
+}
+
+
+.card{
+
+    background:
+        rgba(255,255,255,.97);
+
+    border:
+        1px solid
+        rgba(220,232,243,.9);
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+    box-shadow:var(--shadow);
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero{
+
+    position:relative;
+
+    min-height:500px;
+
+    display:flex;
+
+    align-items:center;
+
+    padding:45px;
+
+    overflow:hidden;
+
+    background:
+
+        linear-gradient(
+            90deg,
+            rgba(255,255,255,.99) 0%,
+            rgba(255,255,255,.97) 48%,
+            rgba(255,255,255,.65) 72%,
+            rgba(255,255,255,.15) 100%
+        ),
+
+        linear-gradient(
+            180deg,
+            #ffffff,
+            #eef6fd
+        );
+}
+
+
+/* decorative circle */
+
+.hero:after{
+
+    content:"";
+
+    position:absolute;
+
+    left:-100px;
+
+    bottom:-180px;
+
+    width:430px;
+
+    height:430px;
+
+    border-radius:50%;
+
+    background:
+
+        radial-gradient(
+            circle,
+            rgba(7,87,168,.10),
+            rgba(7,87,168,0)
+        );
+
+    pointer-events:none;
+}
+
+
+/* =========================================
+   HERO CONTENT
+========================================= */
+
+.hero-content{
+
+    position:relative;
+
+    z-index:2;
+
+    max-width:700px;
+}
+
+
+/* =========================================
+   APS LOGO
+========================================= */
+
+.logo-box{
+
+    width:230px;
+
+    height:120px;
+
+    margin-bottom:18px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    position:relative;
+}
+
+
+.aps-logo{
+
+    position:relative;
+
+    width:210px;
+
+    height:105px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-weight:900;
+
+    font-size:82px;
+
+    font-style:italic;
+
+    letter-spacing:-12px;
+
+    color:#0757a8;
+
+    text-shadow:
+
+        1px 1px 0 #fff,
+
+        3px 4px 8px
+        rgba(0,60,130,.18);
+}
+
+
+.aps-logo .bolt{
+
+    position:absolute;
+
+    left:88px;
+
+    top:4px;
+
+    width:42px;
+
+    height:96px;
+
+    background:
+
+        linear-gradient(
+            145deg,
+            #39c8ff,
+            #0875d1 50%,
+            #003f91
+        );
+
+    clip-path:
+
+        polygon(
+            58% 0,
+            100% 0,
+            66% 38%,
+            92% 38%,
+            25% 100%,
+            43% 53%,
+            10% 53%
+        );
+
+    filter:
+
+        drop-shadow(
+            2px 3px 3px
+            rgba(0,0,0,.18)
+        );
+}
+
+
+.aps-circle{
+
+    position:absolute;
+
+    width:205px;
+
+    height:100px;
+
+    border-top:
+        7px solid
+        #0757a8;
+
+    border-bottom:
+        7px solid
+        #0757a8;
+
+    border-radius:50%;
+
+    opacity:.9;
+}
+
+
+/* =========================================
+   NAME
+========================================= */
+
+.name-ar{
+
+    font-size:
+        clamp(40px,6vw,62px);
+
+    line-height:1;
+
+    color:var(--blue);
+
+    font-weight:900;
+
+    margin-bottom:6px;
+
+    letter-spacing:-1.5px;
+}
+
+
+.name-en{
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size:
+        clamp(24px,4vw,36px);
+
+    color:var(--dark);
+
+    font-weight:700;
+
+    direction:ltr;
+
+    text-align:right;
+
+    margin-bottom:18px;
+}
+
+
+/* =========================================
+   ROLE
+========================================= */
+
+.role{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:
+        10px 23px;
+
+    color:white;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            var(--blue),
+            var(--blue2)
+        );
+
+    border-radius:
+        4px 25px 25px 4px;
+
+    font-size:17px;
+
+    font-weight:700;
+
+    box-shadow:
+
+        0 8px 20px
+        rgba(7,87,168,.22);
+}
+
+
+/* =========================================
+   COMPANY
+========================================= */
+
+.company-ar{
+
+    margin-top:28px;
+
+    font-size:
+        clamp(26px,4vw,39px);
+
+    font-weight:900;
+
+    color:var(--dark);
+}
+
+
+.company-en{
+
+    margin-top:5px;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size:
+        clamp(18px,3vw,27px);
+
+    color:var(--blue);
+
+    font-weight:700;
+
+    letter-spacing:.5px;
+
+    direction:ltr;
+
+    text-align:right;
+}
+
+
+.tagline{
+
+    margin-top:12px;
+
+    color:#506b84;
+
+    font-size:17px;
+
+    line-height:1.8;
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.content{
+
+    padding:32px;
+}
+
+
+.section-title{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    color:var(--dark);
+
+    font-size:21px;
+
+    font-weight:900;
+
+    margin-bottom:20px;
+}
+
+
+.section-title:before{
+
+    content:"";
+
+    width:5px;
+
+    height:25px;
+
+    border-radius:10px;
+
+    background:
+
+        linear-gradient(
+            180deg,
+            var(--blue2),
+            var(--blue)
+        );
+}
+
+
+/* =========================================
+   INFO GRID
+========================================= */
+
+.info-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap:15px;
+}
+
+
+/* =========================================
+   INFORMATION CARD
+========================================= */
+
+.info{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    min-height:90px;
+
+    padding:17px;
+
+    background:#fff;
+
+    border:
+        1px solid
+        var(--border);
+
+    border-radius:19px;
+
+    transition:.25s;
+}
+
+
+.info:hover{
+
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+
+        0 10px 25px
+        rgba(8,64,110,.08);
+}
+
+
+/* =========================================
+   ICON
+========================================= */
+
+.icon{
+
+    width:48px;
+
+    height:48px;
+
+    flex:
+        0 0 48px;
+
+    border-radius:15px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    color:var(--blue);
+
+    background:#edf5fd;
+
+    font-size:22px;
+
+    font-weight:bold;
+}
+
+
+/* =========================================
+   LABEL
+========================================= */
+
+.label{
+
+    font-size:12px;
+
+    color:var(--muted);
+
+    margin-bottom:5px;
+}
+
+
+/* =========================================
+   VALUE
+========================================= */
+
+.value{
+
+    font-size:16px;
+
+    font-weight:700;
+
+    color:var(--text);
+
+    direction:ltr;
+
+    text-align:right;
+
+    overflow-wrap:anywhere;
+}
+
+
+/* =========================================
+   PHONE AREA
+========================================= */
+
+.phone-content{
+
+    flex:1;
+
+    min-width:0;
+}
+
+
+.phone-number{
+
+    display:inline-block;
+
+    color:var(--blue);
+
+    font-size:18px;
+
+    font-weight:800;
+
+    direction:ltr;
+
+    transition:.2s;
+}
+
+
+.phone-number:hover{
+
+    color:var(--blue2);
+}
+
+
+.phone-actions{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    margin-top:9px;
+}
+
+
+.save-contact{
+
+    border:none;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            var(--blue),
+            var(--blue2)
+        );
+
+    color:#fff;
+
+    padding:
+        7px
+        13px;
+
+    border-radius:10px;
+
+    font-family:inherit;
+
+    font-size:12px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.2s;
+}
+
+
+.save-contact:hover{
+
+    transform:
+        translateY(-2px);
+
+    box-shadow:
+
+        0 5px 14px
+        rgba(7,87,168,.22);
+}
+
+
+/* =========================================
+   EMAIL / WEBSITE
+========================================= */
+
+.clickable{
+
+    cursor:pointer;
+}
+
+
+.clickable:hover .value{
+
+    color:var(--blue);
+}
+
+
+/* =========================================
+   ABOUT
+========================================= */
+
+.about{
+
+    margin-top:30px;
+
+    padding:25px;
+
+    border-radius:22px;
+
+    border:
+        1px solid
+        var(--border);
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #f3f8fd,
+            #ffffff
+        );
+}
+
+
+.about p{
+
+    color:#50697f;
+
+    font-size:15px;
+
+    line-height:2;
+
+    margin:0;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.footer{
+
+    text-align:center;
+
+    padding:
+        25px
+        15px
+        10px;
+
+    color:#8292a1;
+
+    font-size:12px;
+
+    line-height:1.8;
+}
+
+
+.footer strong{
+
+    color:var(--blue);
+}
+
+
+/* =========================================
+   TOAST
+========================================= */
+
+.toast{
+
+    position:fixed;
+
+    bottom:25px;
+
+    left:50%;
+
+    transform:
+        translate(-50%,130px);
+
+    background:#092f52;
+
+    color:#fff;
+
+    padding:
+        12px
+        20px;
+
+    border-radius:50px;
+
+    font-size:14px;
+
+    opacity:0;
+
+    transition:.3s;
+
+    z-index:1000;
+
+    box-shadow:
+        0 10px 30px
+        rgba(0,0,0,.18);
+}
+
+
+.toast.show{
+
+    transform:
+        translate(-50%,0);
+
+    opacity:1;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media(max-width:720px){
+
+    .container{
+
+        padding:10px;
+    }
+
+
+    .card{
+
+        border-radius:23px;
+    }
+
+
+    .hero{
+
+        min-height:auto;
+
+        padding:
+            35px
+            22px
+            42px;
+
+        background:
+
+            linear-gradient(
+                180deg,
+                #fff 0%,
+                #fff 72%,
+                #edf6fd 100%
+            );
+    }
+
+
+    .logo-box{
+
+        width:190px;
+
+        height:105px;
+
+        margin-bottom:14px;
+    }
+
+
+    .aps-logo{
+
+        transform:scale(.82);
+    }
+
+
+    .name-ar{
+
+        font-size:40px;
+    }
+
+
+    .name-en{
+
+        font-size:25px;
+    }
+
+
+    .role{
+
+        font-size:15px;
+
+        padding:
+            9px
+            17px;
+    }
+
+
+    .company-ar{
+
+        font-size:27px;
+    }
+
+
+    .company-en{
+
+        font-size:17px;
+
+        line-height:1.5;
+    }
+
+
+    .tagline{
+
+        font-size:15px;
+    }
+
+
+    .content{
+
+        padding:
+            22px
+            17px;
+    }
+
+
+    .info-grid{
+
+        grid-template-columns:1fr;
+    }
+
+
+    .phone-number{
+
+        font-size:17px;
+    }
+
+}
+
+
+@media(max-width:420px){
+
+    .name-ar{
+
+        font-size:36px;
+    }
+
+
+    .name-en{
+
+        font-size:23px;
+    }
+
+
+    .company-ar{
+
+        font-size:24px;
+    }
+
+
+    .company-en{
+
+        font-size:15px;
+    }
+
+
+    .phone-actions{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+    }
+
+
+    .save-contact{
+
+        width:100%;
+
+        padding:
+            9px
+            12px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+<main class="card">
+
+
+<!-- =====================================
+     HERO
+====================================== -->
+
+<section class="hero">
+
+
+<div class="hero-content">
+
+
+<!-- APS LOGO -->
+
+<div class="logo-box">
+
+    <div class="aps-logo">
+
+        APS
+
+        <div class="aps-circle"></div>
+
+        <div class="bolt"></div>
+
+    </div>
+
+</div>
+
+
+<!-- NAME -->
+
+<h1 class="name-ar">
+    أشرف جابر
+</h1>
+
+
+<div class="name-en">
+    Ashraf Gaber
+</div>
+
+
+<!-- ROLE -->
+
+<div class="role">
+
+    <span>
+        المكتب الفني
+    </span>
+
+    <span>
+        |
+    </span>
+
+    <span>
+        TECHNICAL OFFICE
+    </span>
+
+</div>
+
+
+<!-- COMPANY -->
+
+<div class="company-ar">
+    مصادر القدرة الفعالة
+</div>
+
+
+<div class="company-en">
+    MASADER ALQUDRA ALFAILA
+</div>
+
+
+<div class="tagline">
+    لوحات تحكم و جهد منخفض .. بكفاءة و احترافية
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================
+     CONTACT
+====================================== -->
+
+<section class="content">
+
+
+<div class="section-title">
+    بيانات التواصل
+</div>
+
+
+<div class="info-grid">
+
+
+
+<!-- =====================================
+     PHONE
+====================================== -->
+
+<div class="info">
+
+
+<div class="icon">
+    ☎
+</div>
+
+
+<div class="phone-content">
+
+
+<div class="label">
+    الهاتف
+</div>
+
+
+<!--
+    الضغط على الرقم = اتصال مباشر
+-->
+
+<a
+    class="phone-number"
+    href="tel:+966595496415"
+>
+    +966 59 549 6415
+</a>
+
+
+<!--
+    زر حفظ جهة الاتصال
+-->
+
+<div class="phone-actions">
+
+<button
+    class="save-contact"
+    type="button"
+    onclick="saveContact()"
+>
+
+    ＋ حفظ جهة الاتصال
+
+</button>
+
+</div>
+
+
+</div>
+
+</div>
+
+
+
+<!-- =====================================
+     LOCATION
+====================================== -->
+
+<div class="info">
+
+
+<div class="icon">
+    ⌖
+</div>
+
+
+<div>
+
+<div class="label">
+    الموقع
+</div>
+
+
+<div class="value">
+    Riyadh, Kingdom of Saudi Arabia
+</div>
+
+
+</div>
+
+</div>
+
+
+
+<!-- =====================================
+     EMAIL
+====================================== -->
+
+<a
+    class="info clickable"
+    href="mailto:a.gaber@alqudra-sa.com"
+>
+
+
+<div class="icon">
+    ✉
+</div>
+
+
+<div>
+
+<div class="label">
+    البريد الإلكتروني
+</div>
+
+
+<div class="value">
+    a.gaber@alqudra-sa.com
+</div>
+
+
+</div>
+
+
+</a>
+
+
+
+<!-- =====================================
+     WEBSITE
+====================================== -->
+
+<a
+    class="info clickable"
+    href="https://www.alqudra-sa.com"
+    target="_blank"
+    rel="noopener"
+>
+
+
+<div class="icon">
+    ◎
+</div>
+
+
+<div>
+
+<div class="label">
+    الموقع الإلكتروني
+</div>
+
+
+<div class="value">
+    www.alqudra-sa.com
+</div>
+
+
+</div>
+
+
+</a>
+
+
+</div>
+
+
+
+<!-- =====================================
+     ABOUT
+====================================== -->
+
+<div class="about">
+
+
+<div class="section-title">
+
+    نبذة
+
+</div>
+
+
+<p>
+
+<strong>
+مصادر القدرة الفعالة
+</strong>
+
+متخصصة في لوحات الجهد المنخفض ولوحات التحكم،
+مع اهتمام بالحلول الكهربائية العملية وجودة التنفيذ
+والاحترافية الفنية.
+
+</p>
+
+
+</div>
+
+
+</section>
+
+
+</main>
+
+
+
+<!-- =====================================
+     FOOTER
+====================================== -->
+
+<footer class="footer">
+
+<strong>
+    MASADER ALQUDRA ALFAILA
+</strong>
+
+<br>
+
+Low Voltage &amp; Control Panels
+
+</footer>
+
+
+</div>
+
+
+
+<!-- =====================================
+     TOAST
+====================================== -->
+
+<div
+    class="toast"
+    id="toast"
+>
+    تم تجهيز بطاقة جهة الاتصال
+</div>
+
+
+
+<script>
+
+/* =========================================
+   SAVE CONTACT
+========================================= */
+
+function saveContact(){
+
+    const vcard = [
+
+        "BEGIN:VCARD",
+
+        "VERSION:3.0",
+
+        "FN:Ashraf Gaber",
+
+        "N:Gaber;Ashraf;;;",
+
+        "ORG:MASADER ALQUDRA ALFAILA",
+
+        "TITLE:Technical Office",
+
+        "TEL;TYPE=CELL:+966595496415",
+
+        "EMAIL:a.gaber@alqudra-sa.com",
+
+        "ADR;TYPE=WORK:;;Riyadh;;;Saudi Arabia",
+
+        "URL:https://www.alqudra-sa.com",
+
+        "END:VCARD"
+
+    ].join("\r\n");
+
+
+    const blob = new Blob(
+
+        [vcard],
+
+        {
+            type:
+            "text/vcard;charset=utf-8"
+        }
+
+    );
+
+
+    const url =
+        URL.createObjectURL(blob);
+
+
+    const link =
+        document.createElement("a");
+
+
+    link.href = url;
+
+
+    link.download =
+        "Ashraf-Gaber.vcf";
+
+
+    document.body.appendChild(link);
+
+
+    link.click();
+
+
+    link.remove();
+
+
+    URL.revokeObjectURL(url);
+
+
+    showToast(
+        "تم تجهيز بطاقة جهة الاتصال"
+    );
+
+}
+
+
+/* =========================================
+   TOAST
+========================================= */
+
+function showToast(message){
+
+    const toast =
+        document.getElementById("toast");
+
+
+    toast.textContent =
+        message;
+
+
+    toast.classList.add("show");
+
+
+    setTimeout(
+
+        function(){
+
+            toast.classList.remove("show");
+
+        },
+
+        2500
+
+    );
+
+}
+
+</script>
+
+
+</body>
+
+</html>
